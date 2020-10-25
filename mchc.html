@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minecraft Hardcore - Dominik CA1</title>
+    <link rel="shortcut icon" href="images/favicon.png"/>
+    <link rel="stylesheet" href="css/stylesheet.css"/>
+   
+</head>
+<body>
+<div class="content">
+    <div class="menu">
+        <a class="nav" href="index.html"> Home page</a>
+        <a class="nav" href="music.html">My music tastes</a>
+        <a class="active" href="mchc.html">My hardcore World</a>
+        <a class="nav" href="code.html">My coding experience</a>
+    </div>
+    <h1>Minecraft Hardcore</h1>
+    <p>Here is a slideshow of some screenshots of my minecraft hardcore world that I took for this project</p>
+    <p>This world was made roughly 4 months ago, and currently I spent 350 in game days, or 106 hours playing it</p>
+    <p>Since this is hardcore, it means that I have built all of this without dying once.</p>
+    <p>It's not much, but it's honest work</p>
+    <hr>
+    <h2>Slideshow</h2>
+    <button class="prev" onclick="plusSlides(-1)"><--</button>
+    <button class="next" onclick="plusSlides(1)">--></button>
+    <div class="slideshowContent">
+        <div class="slideshow">
+            <p>1 / 9</p>
+            <img src="images/mchc1.png" style="width:75%; height:75%;">
+        </div>
+    </div>
+    <div class="slideshowContent">
+        <div class="slideshow">
+            <p>2 / 9</p>
+            <img src="images/mchc2.png" style="width:75%; height:75%;">
+        </div>
+    </div>
+    <div class="slideshowContent">
+        <div class="slideshow">
+            <p>3 / 9</p>
+            <img src="images/mchc3.png" style="width:75%; height:75%;">
+        </div>
+    </div>
+    <div class="slideshowContent">
+        <div class="slideshow">
+            <p>4 / 9</p>
+            <img src="images/mchc4.png" style="width:75%; height:75%;">
+        </div>
+    </div>
+    <div class="slideshowContent">
+        <div class="slideshow">
+            <p>5 / 9</p>
+            <img src="images/mchc5.png" style="width:75%; height:75%;">
+        </div>
+    </div>
+    <div class="slideshowContent">
+        <div class="slideshow">
+            <p>6 / 9</p>
+            <img src="images/mchc6.png" style="width:75%; height:75%;">
+        </div>
+    </div>
+    <div class="slideshowContent">
+        <div class="slideshow">
+            <p>7 / 9</p>
+            <img src="images/mchc7.png" style="width:75%; height:75%;">
+        </div>
+    </div>
+    <div class="slideshowContent">
+        <div class="slideshow">
+            <p>8 / 9</p>
+            <img src="images/mchc8.png" style="width:75%; height:75%;">
+        </div>
+    </div>
+    <div class="slideshowContent">
+        <div class="slideshow">
+            <p>9 / 9</p>
+            <img src="images/mchc9.png" style="width:75%; height:75%;">
+        </div>
+    </div>
+
+    
+    <footer><a href="https://github.com/dominikkawka" target="_blank"><img src="images/github.png" height=48 width=48></a></footer>
+</div>
+</body>
+</html>
+
+<script> 
+/* Original code edited from W3Schools; 
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow */
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+var i;
+var slides = document.getElementsByClassName("slideshow");
+if (n > slides.length) {slideIndex = 1} //if slides exceed the amount of slides it resets to the first picture   
+if (n < 1) {slideIndex = slides.length}
+
+//without this all pictures are displayed at once
+for (i = 0; i < slides.length; i++) { 
+  slides[i].style.display = "none";  
+}
+slides[slideIndex-1].style.display = "block";  
+}
+</script>

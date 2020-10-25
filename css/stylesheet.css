@@ -1,0 +1,167 @@
+/* General Look of the site */
+body {
+    background-image: url(../images/background.jpg);
+}
+
+.content {
+    width:80%;
+    position:center;
+    background-color: white;
+    margin: 0 auto;
+}
+
+footer {
+    padding-top: 18px 18px;
+    background-color:#63e5ff;
+    color: white;
+    margin: 0 auto;
+    padding:12px 16px;
+    text-align:center;
+}
+
+/* Text */
+.content > p {
+    font-size:14px;
+    padding-left:12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+blockquote {
+    text-decoration: wavy; 
+}
+
+blockquote > strong {
+    text-decoration: underline;
+    color: #121212;
+}
+
+h1,h2 {
+    text-align: center;
+    color: black;
+    text-decoration: underline;
+}
+
+ul > li {
+    list-style-type: square;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:14px;
+}
+
+a.link {
+    color:blue;
+    text-decoration: underline;
+}
+
+a.link:hover {
+    background-color:teal;
+}
+
+a.link:visited {
+    color:green;
+}
+
+/* Navigation bar */ 
+.menu {
+    float: left;
+    text-decoration: none;
+    width:100%;
+    background-color: #63e5ff;
+}
+.active {
+    color: #222222;
+    background-color: #36c4e0;
+    text-decoration: none;
+    float: left;
+    border-right:1px solid #121212;
+    padding: 12px 16px;
+    font-size: 18px;
+}
+.nav {
+    color: white;
+    text-decoration: none;
+    float: left;
+    border-right:1px solid #121212;
+    padding: 12px 16px;
+    font-size: 18px;
+}
+.nav:hover {
+    color: teal;
+}
+
+/* slideshow */
+.slideshowContent {
+    width: 80%;
+    vertical-align: center;
+    margin: 0 auto;
+}
+
+.slideshow {
+    position: center;
+    padding-left:20%;
+}
+
+.slideshow > p { /* Slideshow number */
+    position: absolute;
+    left:32%;
+    background-color: #bcbcbc;
+}
+
+/* buttons */
+
+button.next, button.prev {
+    position:absolute;
+    width:auto;
+    background-color:white;
+    color:black;
+    font-weight:bolder;
+    font-size:18px;
+}
+
+button.next {
+    right: 27.5%;
+}
+
+button.prev {
+    left: 27.5%;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: #bcbcbc;
+}
+
+/* Table (original code edited from w3schools*/ 
+#music {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:16px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#music td, #music th {
+    border: 2px solid #383838;
+    padding: 8px;
+}
+  
+#music th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: teal;
+    color: white;
+    text-align: left;
+}
+
+#music tr:nth-child(even) {
+    background-color: #bcbcbc;
+}
+/* Visual Studio has an option to select the colour within the editor.
+That's why it's in RGB. It's possible to get the hex code but I have the colour 
+I want now so it doesn't matter much */
+#music tr:nth-child(odd) {
+    background-color: rgb(240, 240, 240); 
+}
+  
+#music tr:hover {
+    background-color: rgb(150, 150, 150);
+}
+  
