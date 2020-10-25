@@ -5,31 +5,7 @@
     <title>Minecraft Hardcore - Dominik CA1</title>
     <link rel="shortcut icon" href="images/favicon.png"/>
     <link rel="stylesheet" href="css/stylesheet.css"/>
-    <script> 
-        var slideIndex = 1; /* Original code edited from W3Schools; https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow */
-        showSlides(slideIndex); 
-        
-        function plusSlides(n) {
-        showSlides(slideIndex += n);
-        }
-        
-        function currentSlide(n) {
-        showSlides(slideIndex = n);
-        }
-        
-        function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("slideshow");
-        if (n > slides.length) {slideIndex = 1} //if slides exceed the amount of slides it resets to the first picture   
-        if (n < 1) {slideIndex = slides.length}
-        
-        //without this all pictures are displayed at once
-        for (i = 0; i < slides.length; i++) { 
-          slides[i].style.display = "none";  
-        }
-        slides[slideIndex-1].style.display = "block";  
-        }
-    </script>
+    
 </head>
 <body>
 <div class="content">
@@ -108,3 +84,29 @@
 </div>
 </body>
 </html>
+
+<script> 
+        var slideIndex = 1; /* Original code edited from W3Schools; https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow */
+        showSlides(slideIndex); 
+        
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slideshow");
+        if (n > slides.length) {slideIndex = 1} //if slides exceed the amount of slides it resets to the first picture   
+        if (n < 1) {slideIndex = slides.length}
+        
+        //without this all pictures are displayed at once
+        for (i = 0; i < slides.length; i++) { 
+          slides[i].style.display = "none";  
+        }
+        slides[slideIndex-1].style.display = "block";  
+        }
+    </script>
